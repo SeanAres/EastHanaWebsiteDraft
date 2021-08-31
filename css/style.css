@@ -1,0 +1,243 @@
+* {
+	background-color: none;
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+  font-family:sans-serif;
+  text-decoration: none;
+	list-style: none;
+}
+
+/*PC*/
+
+@media only screen and (min-width: 1000px){
+	menu{
+		display: none;
+	}
+
+	body #sidebar {
+		position:absolute;
+	  top:0px;
+	  left:-200px;
+	  width:200px;
+	  height:100%;
+		border-right:1px solid #444;
+	  background:#F8F9FA;
+	  transition:all 300ms linear;
+		z-index: 10;
+	}
+
+	body #sidebar .toggle-btn {
+	  position:absolute;
+	  left:158px;
+	}
+
+	main nav iframe{
+		float: left;
+		display: block;
+		margin-left: 31%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	main nav ul{
+	  background-color: rgba(243, 243, 243, .7);
+		padding-top: 20px;
+	  padding-bottom: 20px;
+		padding-left: 0px;
+		text-align: center;
+		width: 800px;
+	}
+
+}
+
+@media only screen and (max-width: 1000px){
+	header nav ul{
+		display: none;
+	}
+
+	body main img{
+		display: none;
+	}
+}
+
+/*PC end*/
+
+/*Sidebar*/
+
+#sidebar {
+  position:absolute;
+  top:0px;
+  left:-130px;
+  width:130px;
+  height:100%;
+	border-right:1px solid #444;
+  background:#F8F9FA;
+  transition:all 300ms linear;
+	z-index: 10;
+}
+ #sidebar.active {
+  left:0px;
+}
+#sidebar .toggle-btn {
+  position:absolute;
+  left:88px;
+}
+#sidebar .toggle-btn img {
+  display:block;
+  width:100px;
+  height:100px;
+  cursor:pointer;
+}
+
+#sidebar div ul li a{
+  color:#151719;
+	text-decoration: none;
+}
+
+#sidebar div ul li{
+	color:#151719;
+  padding:15px 10px;
+  border-bottom:1px solid #444;
+  text-transform:uppercase;
+  font-size:15px;
+}
+
+#sidebar div ul li ul{
+ display: none;
+ padding-top: 10px;
+}
+
+#sidebar div ul li:hover ul{
+ display: block;
+}
+
+#sidebar div ul li ul li:hover{
+ background-color: #f3f3f3
+}
+
+/*Sidebar end*/
+
+body{
+  background-color: #111;
+	height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  background-color: #F8F9FA;
+  width: 100%;
+	border-bottom:1px solid #444;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+header nav img{
+	float: left;
+	display: block;
+  margin: 0 auto;
+}
+
+header nav ul li{
+	display: inline-block;
+	float: right;
+	list-style: none;
+	padding: 10px 40px;
+}
+
+.sean{
+	align-content: center;
+	display: block;
+  margin: 0 auto;
+}
+
+main{
+	background-color: #f3f3f3;
+	background-image: url("../images/mainbg.png");
+	background-size: cover;
+	flex: 1;
+	min-height: 100%
+}
+
+main iframe{
+	display: block;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+main img{
+	display: block;
+	margin: 0 auto;
+	height: 50%;
+	width: 100%;
+	padding: 30px;
+}
+
+main ul{
+  background-color: rgba(243, 243, 243, .7);
+  padding-bottom: 40px;
+  display: block;
+  margin: 0 auto;
+	text-align: center;
+	width: fit-content;
+}
+
+main ul li{
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+main ul li a{
+	color: black;
+	text-decoration: none;
+}
+
+footer{
+  background-color: #F8F9FA;
+	flex-grow: 1;
+	border-top:1px solid #444;
+  width: 100%;
+	padding-bottom: 60px;
+}
+
+footer nav{
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 15px 10px;
+}
+
+footer nav ul li{
+  display: inline-block;
+  list-style: none;
+  padding: 20px 15px;
+}
+
+menu{
+  background-color: #F8F9FA;
+  width: 100%;
+  height: 65px;
+	border-top:4px solid #444;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+	z-index: 100;
+}
+
+menu nav ul{
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+menu nav ul li{
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding: 10px 40px;
+}
